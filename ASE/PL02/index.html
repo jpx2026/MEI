@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lista de tarefas</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="container">
+		<h1>Lista de tarefas</h1>
+
+		<form id="task-form" class="task-form">
+			<label for="task-input">Nova tarefa</label>
+			<div class="input-row">
+				<input id="task-input" type="text" placeholder="Ex.: Estudar JavaScript" required>
+				<button type="submit">Adicionar</button>
+			</div>
+		</form>
+
+		<ul id="task-list" class="task-list"></ul>
+		<p id="empty-message" class="empty-message">Ainda não existem tarefas.</p>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
