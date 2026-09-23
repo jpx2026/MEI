@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MEI - CC - LAb 01</title>
+</head>
+<body>
+  <h1>Laboratory Exercise 01 - Insecure service</h1>
+
+  <h2>Provide the required data</h2>
+  <!--<form action="http://localhost:8081/read-form" id="myForm" method="post">-->
+  <form id="myForm">
+
+    <label for="Name">Your Name:</label>
+    <input id="Name" type="text" name="Name">
+
+    <label for="Email">Your Email:</label>
+    <input id="Email" type="text" name="Email">
+
+    <label for="Pass">Your Password:</label>
+    <input id="Pass" type="password" name="Pass">
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="response"></p>
+
+  <script>
+    document.getElementById('myForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const valName = document.getElementById('Name').value;
+      const valEmail = document.getElementById('Email').value;
+      const valPass = document.getElementById('Pass').value;
+      fetch('/read-form', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({'Name': valName, 'Email':valEmail, 'Pass':valPass })
+      })
+      .then(res => res.json())
+      .then(data => document.getElementById('response').innerText = 'Got a reply: ' + ' Name:' + data.Name + ' Email:' + data.Email + ' Pass:'+  data.Pass)
+      .catch(err => console.error(err));
+    });
+  </script>
+
+</body>
+</html>
