@@ -1,0 +1,636 @@
+CONNECTED(00000003)
+Sent TLS Record
+Header:
+  Version = TLS 1.0 (0x301)
+  Content Type = Handshake (22)
+  Length = 1550
+    ClientHello, Length=1546
+      client_version=0x303 (TLS 1.2)
+      Random:
+        gmt_unix_time=0x14808ADE
+        random_bytes (len=28): 73D098FC8AF9F566244735D23A773FB75692FE1A5C4228CCB213588F
+      session_id (len=32): E33C481EA04377FC991EC46FC60791727B2BC4B0F3E39E075E6C8E334D01F22C
+      cipher_suites (len=60)
+        {0x13, 0x02} TLS_AES_256_GCM_SHA384
+        {0x13, 0x03} TLS_CHACHA20_POLY1305_SHA256
+        {0x13, 0x01} TLS_AES_128_GCM_SHA256
+        {0xC0, 0x2C} TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+        {0xC0, 0x30} TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+        {0x00, 0x9F} TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+        {0xCC, 0xA9} TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+        {0xCC, 0xA8} TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+        {0xCC, 0xAA} TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+        {0xC0, 0x2B} TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+        {0xC0, 0x2F} TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+        {0x00, 0x9E} TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+        {0xC0, 0x24} TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+        {0xC0, 0x28} TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+        {0x00, 0x6B} TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+        {0xC0, 0x23} TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
+        {0xC0, 0x27} TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+        {0x00, 0x67} TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+        {0xC0, 0x0A} TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+        {0xC0, 0x14} TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+        {0x00, 0x39} TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+        {0xC0, 0x09} TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+        {0xC0, 0x13} TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+        {0x00, 0x33} TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+        {0x00, 0x9D} TLS_RSA_WITH_AES_256_GCM_SHA384
+        {0x00, 0x9C} TLS_RSA_WITH_AES_128_GCM_SHA256
+        {0x00, 0x3D} TLS_RSA_WITH_AES_256_CBC_SHA256
+        {0x00, 0x3C} TLS_RSA_WITH_AES_128_CBC_SHA256
+        {0x00, 0x35} TLS_RSA_WITH_AES_256_CBC_SHA
+        {0x00, 0x2F} TLS_RSA_WITH_AES_128_CBC_SHA
+      compression_methods (len=1)
+        No Compression (0x00)
+      extensions, length = 1413
+        extension_type=renegotiate(65281), length=1
+            <EMPTY>
+        extension_type=server_name(0), length=18
+          0000 - 00 10 00 00 0d 69 6e 73-74 61 67 72 61 6d 2e   .....instagram.
+          000f - 63 6f 6d                                       com
+        extension_type=ec_point_formats(11), length=4
+          uncompressed (0)
+          ansiX962_compressed_prime (1)
+          ansiX962_compressed_char2 (2)
+        extension_type=supported_groups(10), length=18
+          X25519MLKEM768 (4588)
+          ecdh_x25519 (29)
+          secp256r1 (P-256) (23)
+          ecdh_x448 (30)
+          secp384r1 (P-384) (24)
+          secp521r1 (P-521) (25)
+          ffdhe2048 (256)
+          ffdhe3072 (257)
+        extension_type=session_ticket(35), length=0
+        extension_type=encrypt_then_mac(22), length=0
+        extension_type=extended_master_secret(23), length=0
+        extension_type=signature_algorithms(13), length=54
+          mldsa65 (0x0905)
+          mldsa87 (0x0906)
+          mldsa44 (0x0904)
+          ecdsa_secp256r1_sha256 (0x0403)
+          ecdsa_secp384r1_sha384 (0x0503)
+          ecdsa_secp521r1_sha512 (0x0603)
+          ed25519 (0x0807)
+          ed448 (0x0808)
+          ecdsa_brainpoolP256r1tls13_sha256 (0x081a)
+          ecdsa_brainpoolP384r1tls13_sha384 (0x081b)
+          ecdsa_brainpoolP512r1tls13_sha512 (0x081c)
+          rsa_pss_pss_sha256 (0x0809)
+          rsa_pss_pss_sha384 (0x080a)
+          rsa_pss_pss_sha512 (0x080b)
+          rsa_pss_rsae_sha256 (0x0804)
+          rsa_pss_rsae_sha384 (0x0805)
+          rsa_pss_rsae_sha512 (0x0806)
+          rsa_pkcs1_sha256 (0x0401)
+          rsa_pkcs1_sha384 (0x0501)
+          rsa_pkcs1_sha512 (0x0601)
+          ecdsa_sha224 (0x0303)
+          rsa_pkcs1_sha224 (0x0301)
+          dsa_sha224 (0x0302)
+          dsa_sha256 (0x0402)
+          dsa_sha384 (0x0502)
+          dsa_sha512 (0x0602)
+        extension_type=supported_versions(43), length=5
+          TLS 1.3 (772)
+          TLS 1.2 (771)
+        extension_type=psk_key_exchange_modes(45), length=2
+          psk_dhe_ke (1)
+        extension_type=key_share(51), length=1258
+            NamedGroup: X25519MLKEM768 (4588)
+            key_exchange:  (len=1216): CC875B85E7AE7B81433CC49CF6892E7531108015C3BC41B3D0B5B5E21356C0854047E6BF6E759B71EC7D3925733C8499B78449211CBE29DA0AAD8B73ABC0C5A97C0D99DAAE3F47076362C137F3B263E4A3360B798EE65864146DAA78370861A5C9D061B8268D07010586BA33D5C426F8A2570847BFBCA96040A28FCE0955A98268C51216FD009E2E8384CA0445CAD021B6104E275299C8EB8E3940001EB4012A42C7E88977BE1101F256868A792C0CDAAD10166B750171942A29FAA252E08500317727DEB0C415B3C4FF4C48FD075F4A2C8F15E7329ED40C6EC1716C6B9A378057FBC84530D7B6F026651C16B318574539994698A12F8A657A62FBA342D40DDDB61D12F975C245237ED987E1617DA87B39F8246B7C9955BCB66FEF8933571B1EFBE780503320B5950430019D77F5298BE0036CCA97CFF7794D1C4C801514B93C37A2C24E9D215BB9113C5741AFA90703166CAEF546CC9E64786181A115E57191A47B3041945769A64AC100D608C51DE37D89422ECD9C0E0DBA5848C2A8CAF8895A250A85EA54FFBB0670881544FA86001A4A13D84E5988A0655BB9A0975D4EF6BB7335C06F7555E8D433C5C21220373A623289616C8FC445CA84D44DD33606C865BEA66C1BD64003D0CB6BF3642D5CBC20F3333529FC3AE0B8B38954088AC528EB200FBE8979320328CAEB82B8C90312CC0372D7C2B99774E2747769E916FA938F68600E2658C753F757C6B0316F6BC2A63A2B55A983362610A8130EF2F97644A21ADC809052562F44B6894F257F93A73541D65513136DE5972B724325BC4C902D5CA0A23BCFCE0320D1A038694178764425CFB95269DC873C4A23DE05C25623101A165E55E57430775C565CC5D6191170F5A14318091FE7509BD2383B6B77FA5063D47C1B48F8950841683CB0405E554A81E9C88E915FAB60A7F62A21054B058A6550E3F18EC6BAB2F34A293E4658C4299C225B5CB7D502DA311A539B0EA1B804E1E9028636788349AE88A2371F2864060844C7F6BD8DE08641F99957311DE5179F066B8DF59B68CB0614648475B764B6AEA09F12A0643969300550575D11458E45A8FD14A179634921C49CBB62689C600F31752CF3617F90C427A9454BC1464D29071A9C03591DCB40D4568738B840A2644C9D02752D55AF510C82054C2708218C84F12C217A2188E7862532042E3BA245AA094BC243832287A5A91F1C046DD1DB9E97B8222DDB13F24C6EF19653DF8517CC5CC14CA09058B70398A6C7CF484D14C649094A998FBA06D82BC12FA2407100C1216BC6A2A42BFE5160BC7CCAB070BB924B261F848FD6028A066A8C515406F54BA30F6BC727697E2F615F257917AFB501E67A9723DB8C9C51061D05B53B6B0E25D0069BA9607EC6B185E61CD1C608DBD8007DB40C5CDA8312B31CDAAAB5FE16699C39C9A30092BE666E12232A02839C4C34324ED5B57F178317714323E3B8E9CBCDE6D22F2E993B3EFC0F4AD8CBE51C9E0E258C0DE87D331B101C7255AB4897D8EC0BCCB2B659CCBCFD227C24691E9D6C108C80504E14A8B2D21482EC0A82032E3373579535877B497112239CE51161318C7D4DF80CE968685AC70CEACC617394B8216934EEA6B23744A095441F5352AC077EEC3A82A9A88DD77D549FC1B6141F8311D604E12163BAA895BC8CDCB1A33D155638AD4AD70D326B02C8329FB8794DEBD39D50CDBD993DBE446F7E1E
+            NamedGroup: ecdh_x25519 (29)
+            key_exchange:  (len=32): F28BE56EDD3142042DFA79477DE3FDF47AC10ADAF92CD65F62311827EC3BA013
+        extension_type=compress_certificate(27), length=5
+          zlib (1)
+          zstd (3)
+
+Received TLS Record
+Header:
+  Version = TLS 1.2 (0x303)
+  Content Type = Handshake (22)
+  Length = 1210
+    ServerHello, Length=1206
+      server_version=0x303 (TLS 1.2)
+      Random:
+        gmt_unix_time=0x09903B3A
+        random_bytes (len=28): 2BCC5018589680ABE57728202BA92646F51D357542695A421C2AFD7F
+      session_id (len=32): E33C481EA04377FC991EC46FC60791727B2BC4B0F3E39E075E6C8E334D01F22C
+      cipher_suite {0x13, 0x03} TLS_CHACHA20_POLY1305_SHA256
+      compression_method: No Compression (0x00)
+      extensions, length = 1134
+        extension_type=supported_versions(43), length=2
+            TLS 1.3 (772)
+        extension_type=key_share(51), length=1124
+            NamedGroup: X25519MLKEM768 (4588)
+            key_exchange:  (len=1120): 6070DB81404ED45C144E94F8B36613A154C5D999E0FA27BD720E4E4010C5E549D6A92A129C071DD2D5C48FC4DC96ECB3E7DD45C725441156B949F487230EA601A4CBE71471ED9628E183C5EC69CBAF3E433D37DD5813F58CE0BFA1A8E9503CF2F50222106D2871B1ACE77EE4D6B0681E742E0FBCFC7A58966733AABB3DA1FF0B87A2C13C9CC458176E348CEAACB1914D1B949194C8312421F91CEF757E23ADDE3FDE75633E0DC9D610E31A7CE4A98AF496FD3057F0378529C88D958232B19520A18E4A5A44889B397A4CA5079E2AECC1A9B7EB2B1EA6D70ECB17CA43570B03F6B60C77AD8FB033FECB0912AEBB7C549DEBD0DBF08D9D16A3F3706FE27F51FC394FD807FF6583C3E0C86572B13B3DB27824BF4A973756F8D2602D71DB6CC31C7ABA032DD72618BEB9E183B85EF50D2E612ABE67717980D9760663887A5566AE77BA0F6B2325D6D8A10DF882E375149AF1C1A0930B1A94E0E6A0CA2CB84B770DF1D2DF09E34ED4BB40C4A8B92F7A24365D095A835C9896DDE26FB50B066A27D804FEEC3563A0EE710150188FE134481C4BA1B7B1D6FBB84249EA4B9461A39A1EC4F928FB9DC3427D0C2A827545B744F385884C20D0C4C0AB346ECEF8A657C2AD3A55E6E1B23A5884543A5041B8300EB7C8A86BE6EC1745BFE9BCF39E1547626CB4E822B81B5A1EADDF15BCFC56A146681E88DB170D21FEDDF7AC475C639366C5A357A97C262F0F19907C2E9A5EB6DDD498F173718981B0731928CEC18FBFEDDAD909B304DBEADD634E48FA72D96543E20CF4197D81F0AE35A02236659710A45EF2CB555A4214FEEFD5C100A66F175FB6F0DFA6385883F8E2F7EA3E91026B14DD030B9F274F56EAB01E8CE0176845855F244194E3E4836F3BB330499597A5C6EE87726FD7856B6659B07CB580922847E5C6BC3E5BE4DEC25AE03620A8B2EF1D0B6835AA43AFFA45F1E1C3A4C4D6E8FB21767A9A623CD59FF1A015D4D1FFA4A19FCCC0192C8B028F0634125D7CE69C8E519B96CF67A7F898C4B52CAE2624E60ED48DD0BB780BBF2C0A05D8E0F49BC5BA50A5A5A756C89D955FF8597F6D297660A2FA02DC00BCAA3F075A869B21557826DAFBC8F5A60C26BA035E1FC6E50E376E524521920B302BD77CA7BB1CD47A51042D75CE7D1C0A06DE339655ED047479555D3F07D9F165F934F422884BC24DA97BDE0B572B17372117F4470287DFDD9AA3B5BA6B3804E9C332950ECC04F4E09DCA8AD50E8B5AE1E00569786D51262E76AFD6032B2F253AD01E29F9CD84EE5C7A4BF18EDC4313D5B9A8B6AD98BDE75B4F55403F3EF8A9A6F61EFCCF2FE2A7FB7B42D174DAB3CE9751095876D56F73D0B61A33E574375DE37C6D5D5053E30FAEA8F9392468807551192CDB8E5FB9004A6AD758F45C1F4C25ADD465EBC219E7C8DB05D00C14804278C7DFB5BC9FBF85A3943EB37E1459E36262422F70FD202F356860353D5ED3D6DE7B3DEFB512BA797ECAC2BADE755D285607BF18AB7298A94AB4FDDFF5AEA90AB5011BFD3FF701B5AAA19DCC9184FF111B3129B2127F7283118856AFDDAB87B2F4E31A40AF74053C5C3DE24829
+
+Received TLS Record
+Header:
+  Version = TLS 1.2 (0x303)
+  Content Type = ChangeCipherSpec (20)
+  Length = 1
+    change_cipher_spec (1)
+
+Received TLS Record
+Header:
+  Version = TLS 1.2 (0x303)
+  Content Type = ApplicationData (23)
+  Length = 1017
+  Inner Content Type = Handshake (22)
+    EncryptedExtensions, Length=2
+      No extensions
+
+Received TLS Record
+Header:
+  Version = TLS 1.2 (0x303)
+  Content Type = ApplicationData (23)
+  Length = 1220
+  Inner Content Type = Handshake (22)
+    CompressedCertificate, Length=2079
+      Compression type=zstd (0x0003)
+      Uncompressed length=2873
+      Compressed length=2071, Ratio=1.387253:1
+      0000 - 28 b5 2f fd 60 39 0a 6d-40 00 14 70 00 00 0b 35   (./.`9.m@..p...5
+      0010 - 00 06 5f 30 82 06 5b 30-82 05 43 a0 03 02 01 02   .._0..[0..C.....
+      0020 - 02 10 0e 46 b8 05 3f 9d-b5 82 87 94 76 18 b4 9d   ...F..?.....v...
+      0030 - d6 1e 30 0d 06 09 2a 86-48 86 f7 0d 01 01 0b 05   ..0...*.H.......
+      0040 - 00 30 59 31 0b 30 09 06-03 55 04 06 13 02 55 53   .0Y1.0...U....US
+      0050 - 31 15 30 13 0a 13 0c 44-69 67 69 43 65 72 74 20   1.0....DigiCert 
+      0060 - 49 6e 63 31 33 30 31 03-13 2a 47 6c 6f 62 61 6c   Inc1301..*Global
+      0070 - 20 47 32 20 54 4c 53 20-52 53 41 20 53 48 41 32    G2 TLS RSA SHA2
+      0080 - 35 36 20 32 30 32 30 20-43 41 31 30 1e 17 0d 32   56 2020 CA10...2
+      0090 - 36 30 37 30 34 30 5a 31-30 30 32 32 33 35 39 35   607040Z100223595
+      00a0 - 39 5a 30 70 13 30 11 08-13 0a 43 61 6c 69 66 6f   9Z0p.0....Califo
+      00b0 - 72 6e 69 61 07 13 0a 4d-65 6e 6c 6f 20 50 61 72   rnia...Menlo Par
+      00c0 - 6b 31 1d 30 1b 14 4d 65-74 61 20 50 6c 61 74 6d   k1.0..Meta Platm
+      00d0 - 73 2c 2e 31 18 30 16 0c-0f 2a 2e 69 6e 73 74 61   s,.1.0...*.insta
+      00e0 - 67 72 61 6d 2e 63 6f 6d-30 59 07 ce 3d 02 01 06   gram.com0Y..=...
+      00f0 - 08 03 01 07 03 42 00 04-93 73 7d d5 05 21 f3 92   .....B...s}..!..
+      0100 - fb 1e ec d6 9a 12 0c 7b-5a 05 0f 16 0a 49 92 3f   .......{Z....I.?
+      0110 - 66 e7 19 2f 3e 2f b5 8b-e1 94 70 7d 06 d1 53 10   f../>/....p}..S.
+      0120 - 70 13 23 b4 cc 02 0b 0b-9c 4d cf 9b 79 94 1c 32   p.#......M..y..2
+      0130 - ce 04 45 88 ab 4d e4 0a-a3 82 03 d1 30 82 03 cd   ..E..M......0...
+      0140 - 30 1f 1d 23 04 80 14 74-85 80 c0 66 c7 df 37 de   0..#...t...f..7.
+      0150 - cf bd 29 37 aa 03 1d be-ed cd 17 30 1d 0e 04 16   ..)7.......0....
+      0160 - 04 14 12 42 b0 fb ec 3f-f0 be e1 99 5a 6d 48 a6   ...B...?....ZmH.
+      0170 - fe b0 6b 8b cc 19 30 6b-11 04 64 30 62 82 82 12   ..k...0k..d0b...
+      0180 - 2a 2e 63 64 6e 0d 67 73-6f 6e 61 72 10 0b 0d 3e   *.cdn.gsonar...>
+      0190 - 20 04 37 30 35 30 33 06-06 67 81 0c 01 02 02 30    .70503..g.....0
+      01a0 - 29 30 27 06 08 2b 06 01-05 05 07 02 01 16 1b 68   )0'..+.........h
+      01b0 - 74 74 70 3a 2f 2f 77 77-77 2e 64 63 2f 43 50 53   ttp://www.dc/CPS
+      01c0 - 30 0e 0f 01 01 ff 04 04-03 02 03 88 30 13 25 04   0...........0.%.
+      01d0 - 0c 30 0a 03 01 30 81 9f-1f 04 81 97 30 81 94 30   .0...0......0..0
+      01e0 - 48 a0 46 a0 44 86 42 63-72 6c 33 47 32 2d 31 2e   H.F.D.Bcrl3G2-1.
+      01f0 - 34 81 87 01 01 04 7b 30-79 30 24 30 01 86 18 6f   4.....{0y0$0...o
+      0200 - 63 73 70 30 51 02 86 45-61 73 74 30 0c 13 02 30   csp0Q..East0...0
+      0210 - 00 30 82 01 7d 06 0a 04-01 d6 79 02 04 02 04 82   .0..}.....y.....
+      0220 - 01 6d 69 01 67 00 76 00-c2 31 7e 57 45 19 a3 45   .mi.g.v..1~WE..E
+      0230 - ee 7f 38 de b2 90 41 eb-c7 c2 21 5a 22 bf 7f d5   ..8...A...!Z"...
+      0240 - b5 ad 76 9a d9 0e 52 cd-00 00 01 9f 2a 7b d8 ec   ..v...R.....*{..
+      0250 - 00 00 04 03 00 47 30 45-02 21 00 d1 2f a8 14 9e   .....G0E.!../...
+      0260 - 5d 31 f1 d0 9b 09 d7 30-7f b2 f5 06 15 50 94 d7   ]1.....0.....P..
+      0270 - c6 2e 29 68 0b 8a 50 1c-21 59 b1 02 20 00 96 cc   ..)h..P.!Y.. ...
+      0280 - 67 0e 43 8f 4d 69 51 67-03 1b 00 e7 90 d5 ac eb   g.C.MiQg........
+      0290 - f2 d5 22 00 4e fa b0 2b-9d 4d f6 22 6b d7 6d 7d   ..".N..+.M."k.m}
+      02a0 - 10 d1 a7 f5 77 c2 c7 e9-5f d7 00 bf f9 82 c9 33   ....w..._......3
+      02b0 - 5a 65 e1 d0 b3 01 73 17-c0 c8 c5 69 77 d9 01 20   Ze....s....iw.. 
+      02c0 - 71 85 00 e0 80 f3 ef 4a-d9 bf ca 6b 41 1a d3 5d   q......J...kA..]
+      02d0 - 08 90 d9 bd 69 fd 09 e2-5b fa 3b b3 83 08 07 b3   ....i...[.;.....
+      02e0 - 82 60 01 a0 68 47 db 8d-12 ac 2c 6e ca b5 a7 ea   .`..hG....,n....
+      02f0 - 7d f5 07 6f 49 de c9 45-b0 23 00 c5 f6 25 51 ac   }..oI..E.#...%Q.
+      0300 - 00 75 00 94 4e 43 87 fa-ec c1 ef 81 f3 19 24 26   .u..NC........$&
+      0310 - a8 18 65 01 c7 d3 5f 38-02 01 3f 72 67 7d 55 37   ..e..._8..?rg}U7
+      0320 - 2e 19 d8 ff 46 30 44 02-20 5f bf a7 4e eb 90 32   ....F0D. _..N..2
+      0330 - 25 4e 60 bd 59 c3 23 d5-86 95 11 1a d2 a6 8b 67   %N`.Y.#........g
+      0340 - 2e d0 f9 9b 1b 6c 71 12-74 02 20 66 fa 4b 4b 0d   .....lq.t. f.KK.
+      0350 - 3d c3 89 a4 88 f6 4f 1d-20 98 28 21 15 de b5 2b   =.....O. .(!...+
+      0360 - e8 bf 49 3f e2 da 8c 35-47 95 40 03 82 01 01 00   ..I?...5G.@.....
+      0370 - 6a 11 c9 d3 4c be 70 c1-f3 0b da 73 de 54 61 d6   j...L.p....s.Ta.
+      0380 - 33 ee 7b d2 3a 3a 7c 97-8e e1 76 b0 1c 7b f8 f2   3.{.::|...v..{..
+      0390 - 91 64 88 db a3 cd 4e 29-ea f9 97 ba d7 b5 37 10   .d....N)......7.
+      03a0 - 99 f6 50 44 12 f1 9a c2-2d c0 75 ad 70 1c f1 b5   ..PD....-.u.p...
+      03b0 - b6 5a ac f8 e8 2a cf 3a-5c 41 2b 59 3f 80 11 da   .Z...*.:\A+Y?...
+      03c0 - b9 c5 cb eb 78 b4 53 65-2c 9b c3 75 8d 9c bc 25   ....x.Se,..u...%
+      03d0 - 64 d3 fe fb e7 64 49 79-be fb 42 0b a4 13 9d 50   d....dIy..B....P
+      03e0 - 0d 1d f3 ee c7 54 f8 d2-54 90 3e dc ed 98 05 a3   .....T..T.>.....
+      03f0 - fc 13 f0 59 82 8b f1 59-90 1d 52 76 e1 bb 9f eb   ...Y...Y..Rv....
+      0400 - ba 61 d4 f3 7f 4a a0 d0-7b 5a 26 ba f5 ab ab 6b   .a...J..{Z&....k
+      0410 - ce e4 0c ed ef 90 02 8d-95 e6 6c dd 55 8d 05 70   ..........l.U..p
+      0420 - ba 94 d5 c5 da 14 f1 99-11 dd 79 89 7a 2d f0 f2   ..........y.z-..
+      0430 - 71 26 48 ea 70 71 bc a1-83 5f 20 a3 1d 49 a4 9a   q&H.pq..._ ..I..
+      0440 - 47 89 9b f0 aa 83 1c 5a-54 cd 14 38 7e 87 76 d3   G......ZT..8~.v.
+      0450 - 58 20 4b c3 e1 91 ef f9-c8 d1 96 80 73 6e 37 16   X K.........sn7.
+      0460 - dd 6a de 4a 82 35 2d 64-3e 19 68 90 01 fd 08 2e   .j.J.5-d>.h.....
+      0470 - 00 cc 30 82 04 c8 30 82-03 b0 0c f5 bd 06 2b 56   ..0...0.......+V
+      0480 - 02 f4 7a b8 50 2c 23 cc-f0 66 61 19 30 17 0b 13   ..z.P,#..fa.0...
+      0490 - 10 31 20 30 1e 17 52 6f-6f 32 31 30 33 33 30 33   .1 0..Roo2103303
+      04a0 - 32 39 82 01 22 01 0f 0a-02 cc f7 10 62 4f a6 bb   29..".......bO..
+      04b0 - 63 6f ed 90 52 56 c5 6d-27 7b 7a 12 56 8a f1 f4   co..RV.m'{z.V...
+      04c0 - f9 d6 e7 e1 8f bd 95 ab-f2 60 41 15 70 db 12 00   .........`A.p...
+      04d0 - fa 27 0a b5 57 38 5b 7d-b2 51 93 71 95 0e 6a 41   .'..W8[}.Q.q..jA
+      04e0 - 94 5b 35 1b fa 7b fa bb-c5 be 24 30 fe 56 ef c4   .[5..{....$0.V..
+      04f0 - f3 7d 97 e3 14 f5 14 4d-cb a7 10 f2 16 ea ab 22   .}.....M......."
+      0500 - f0 31 22 11 61 69 90 26-ba 78 d9 97 1f e3 7d 66   .1".ai.&.x....}f
+      0510 - ab 75 44 95 73 c8 ac ff-ef 5d 0a 8a 59 43 e1 ac   .uD.s....]..YC..
+      0520 - b2 3a 0f f3 48 fc d7 6b-37 c1 63 dc de 46 d6 db   .:..H..k7.c..F..
+      0530 - 45 fe 7d 23 fd 90 e8 51-07 1e 51 a3 5f ed 49 46   E.}#...Q..Q._.IF
+      0540 - 54 7f 2c 88 c5 f4 13 9c-97 15 3c 03 e8 a1 39 dc   T.,.......<...9.
+      0550 - 69 0c 32 c1 af 16 57 4c-94 47 42 7c a2 c8 9c 7d   i.2...WL.GB|...}
+      0560 - e6 d4 4d 54 af 42 99 a8-c1 04 c2 77 9c d6 48 e4   ..MT.B.....w..H.
+      0570 - ce 11 e0 2a 80 99 f0 43-70 cf 3f 76 6b d1 4c 49   ...*...Cp.?vk.LI
+      0580 - ab 24 5e c2 0d 82 fd 46-a8 ab 6c 93 cc 62 52 42   .$^....F..l..bRB
+      0590 - 75 92 f8 9a fa 5e 5e b2-b0 61 e5 1f 1f b9 7f 09   u....^^..a......
+      05a0 - 98 e8 3d fa 83 7f 47 69-a1 02 03 01 00 01 a3 82   ..=...Gi........
+      05b0 - 01 82 30 82 01 7e 30 12-08 30 06 02 01 00 4e 22   ..0..~0..0....N"
+      05c0 - 54 20 18 95 e6 e3 6e e6-0f fa fa b9 12 ed 06 17   T ....n.........
+      05d0 - 8f 39 01 86 30 1d 16 30-14 02 30 76 6a 30 68 40   .9..0..0..0vj0h@
+      05e0 - 34 47 32 42 3b 30 39 30-37 a0 35 a0 33 86 31 6c   4G2B;0907.5.3.1l
+      05f0 - 30 3d 36 30 34 30 0b 06-09 60 86 48 01 86 fd 6c   0=6040...`.H...l
+      0600 - 02 01 30 07 06 05 01 30-08 02 03 90 f1 70 cb 28   ..0....0.....p.(
+      0610 - 97 69 97 7c 74 fd c0 fa-26 7b 53 ab ad cd 65 fd   .i.|t...&{S...e.
+      0620 - ba 9c 06 9c 8a d7 5a 43-87 ed 4d 4c 56 5f ad c1   ......ZC..MLV_..
+      0630 - c5 b5 05 20 2e 59 d1 ff-4a f5 a0 2a d8 b0 95 ad   ... .Y..J..*....
+      0640 - c9 2e 4a 3b d7 a7 f6 6f-88 29 fc 30 3f 24 84 bb   ..J;...o.).0?$..
+      0650 - c3 b7 7b 93 07 2c af 87-6b 76 33 ed 00 55 52 b2   ..{..,..kv3..UR.
+      0660 - 59 9e e4 b9 d0 f3 df e7-0f fe dd f8 c4 b9 10 72   Y..............r
+      0670 - 81 09 04 5f cf 97 9e 2e-32 75 8e cf 9a 58 d2 57   ..._....2u...X.W
+      0680 - 31 7e 37 01 81 b2 66 6d-29 1a b1 66 09 6d d1 6e   1~7...fm)..f.m.n
+      0690 - 90 f4 b9 fa 2f 01 14 c5-5c 56 64 01 d9 7d 87 a8   ..../...\Vd..}..
+      06a0 - 38 53 9f 8b 5d 46 6d 5c-c6 27 84 81 d4 7e 8c 8c   8S..]Fm\.'...~..
+      06b0 - a3 9b 52 e7 c6 88 ec 37-7c 2a fb f0 55 5a 38 72   ..R....7|*..UZ8r
+      06c0 - 10 d8 00 13 cf 4c 73 db-aa 37 35 a8 29 81 69 9c   .....Ls..75.).i.
+      06d0 - 76 bc de 18 7b 90 d4 ca-cf ef 67 03 fd 04 5a 21   v...{.....g...Z!
+      06e0 - 16 b1 ff ea 3f df dc 82-f5 eb f4 59 92 23 0d 24   ....?......Y.#.$
+      06f0 - 2a 95 25 4c ca a1 91 e6-d4 b7 ac 87 74 b3 f1 6d   *.%L........t..m
+      0700 - a3 99 db f9 d5 bd 84 40-9f 07 98 00 00 6b 20 50   .......@.....k P
+      0710 - 86 0c 51 d5 76 d4 90 0a-e8 6b 3b 2c af 1c 84 8f   ..Q.v....k;,....
+      0720 - 65 b5 73 98 63 07 24 3c-e9 0b 17 19 78 d4 4d ca   e.s.c.$<....x.M.
+      0730 - ab 35 64 35 04 ca 88 4f-e2 14 1a 7c 0f 0f 84 a2   .5d5...O...|....
+      0740 - c8 6c f5 38 a8 b9 0a 58-4c db 50 60 78 28 47 6a   .l.8...XL.P`x(Gj
+      0750 - d6 f8 c0 e0 1f 8c c5 2f-41 17 37 a8 6e 4f 60 08   ......./A.7.nO`.
+      0760 - 14 03 46 bd 37 e5 12 07-30 47 57 d0 0c e4 0d e2   ..F.7...0GW.....
+      0770 - 40 30 f0 5c a0 75 a6 64-87 01 59 80 39 5e 4a 9f   @0.\.u.d..Y.9^J.
+      0780 - 36 19 e6 73 4d 3a 03 04-a5 01 03 d9 f7 03 c4 05   6..sM:..........
+      0790 - 78 13 e0 a8 22 ae 4b 82-59 a3 ee 84 16 53 ec b9   x...".K.Y....S..
+      07a0 - 34 ad f5 64 f2 99 cc 09-97 91 c0 f6 e4 e6 9e dd   4..d............
+      07b0 - 0b cc 01 c8 01 f2 00 19-00 60 1e 60 1e 31 e6 04   .........`.`.1..
+      07c0 - d0 2c 89 cc bd a6 d7 2b-fe 6f be 74 80 85 af 75   .,.....+.o.t...u
+      07d0 - 01 20 f6 0f 28 30 04 32-11 f2 09 71 8c 6c 0a 69   . ..(0.2...q.l.i
+      07e0 - a1 90 80 7b 97 8d 90 58-16 14 03 a2 00 1f 06 b8   ...{...X........
+      07f0 - c8 3f 88 8c ab 02 00 dc-61 42 80 f1 de 8b 96 93   .?......aB......
+      0800 - 04 3d aa c6 82 a6 8f 60-f0 2f 2f cf 18 4f 68 97   .=.....`.//..Oh.
+      0810 - ab 1d 16 81 c0 44 01                              .....D.
+      context (len=0): 
+      certificate_list, length=2869
+        ASN.1Cert, length=1631
+------details-----
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            0e:46:b8:05:3f:9d:b5:82:87:94:76:18:b4:9d:d6:1e
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, O = DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1
+        Validity
+            Not Before: Jul  4 00:00:00 2026 GMT
+            Not After : Oct  2 23:59:59 2026 GMT
+        Subject: C = US, ST = California, L = Menlo Park, O = "Meta Platforms, Inc.", CN = *.instagram.com
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:93:73:7d:d5:05:21:f3:92:fb:1e:ec:d6:9a:12:
+                    0c:7b:5a:05:0f:16:0a:49:92:3f:66:e7:19:2f:3e:
+                    2f:b5:8b:e1:94:70:7d:06:d1:53:10:70:13:23:b4:
+                    cc:02:0b:0b:9c:4d:cf:9b:79:94:1c:32:ce:04:45:
+                    88:ab:4d:e4:0a
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                74:85:80:C0:66:C7:DF:37:DE:CF:BD:29:37:AA:03:1D:BE:ED:CD:17
+            X509v3 Subject Key Identifier: 
+                12:42:B0:FB:EC:3F:F0:BE:E1:99:5A:6D:48:A6:FE:B0:6B:8B:CC:19
+            X509v3 Subject Alternative Name: 
+                DNS:*.instagram.com, DNS:*.cdninstagram.com, DNS:*.igsonar.com, DNS:cdninstagram.com, DNS:igsonar.com, DNS:instagram.com
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.2
+                  CPS: http://www.digicert.com/CPS
+            X509v3 Key Usage: critical
+                Digital Signature, Key Agreement
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://crl3.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crl
+
+                Full Name:
+                  URI:http://crl4.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crl
+
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.digicert.com
+                CA Issuers - URI:http://cacerts.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crt
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            CT Precertificate SCTs: 
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : C2:31:7E:57:45:19:A3:45:EE:7F:38:DE:B2:90:41:EB:
+                                C7:C2:21:5A:22:BF:7F:D5:B5:AD:76:9A:D9:0E:52:CD
+                    Timestamp : Jul  4 00:16:27.372 2026 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:45:02:21:00:D1:2F:A8:14:9E:5D:31:F1:D0:9B:09:
+                                D7:30:7F:B2:F5:06:15:50:94:D7:C6:2E:29:68:0B:8A:
+                                50:1C:21:59:B1:02:20:00:96:CC:67:0E:43:8F:4D:69:
+                                51:67:03:1B:00:E7:90:D5:AC:EB:F2:D5:22:00:4E:FA:
+                                B0:2B:9D:4D:F6:22:6B
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : D7:6D:7D:10:D1:A7:F5:77:C2:C7:E9:5F:D7:00:BF:F9:
+                                82:C9:33:5A:65:E1:D0:B3:01:73:17:C0:C8:C5:69:77
+                    Timestamp : Jul  4 00:16:27.393 2026 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:45:02:20:71:85:00:E0:80:F3:EF:4A:D9:BF:CA:6B:
+                                41:1A:D3:5D:08:90:D9:BD:69:FD:09:E2:5B:FA:3B:B3:
+                                83:08:07:B3:02:21:00:82:60:01:A0:68:47:DB:8D:12:
+                                AC:2C:6E:CA:B5:A7:EA:7D:F5:07:6F:49:DE:C9:45:B0:
+                                23:00:C5:F6:25:51:AC
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : 94:4E:43:87:FA:EC:C1:EF:81:F3:19:24:26:A8:18:65:
+                                01:C7:D3:5F:38:02:01:3F:72:67:7D:55:37:2E:19:D8
+                    Timestamp : Jul  4 00:16:27.391 2026 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:44:02:20:5F:BF:A7:4E:EB:90:32:25:4E:60:BD:59:
+                                C3:23:D5:86:95:11:1A:D2:A6:8B:67:2E:D0:F9:9B:1B:
+                                6C:71:12:74:02:20:66:FA:4B:4B:0D:3D:C3:89:A4:88:
+                                F6:4F:1D:20:98:28:21:15:DE:B5:2B:E8:BF:49:3F:E2:
+                                DA:8C:35:47:95:40
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        6a:11:c9:d3:4c:be:70:c1:f3:0b:da:73:de:54:61:d6:33:ee:
+        7b:d2:3a:3a:7c:97:8e:e1:76:b0:1c:7b:f8:f2:91:64:88:db:
+        a3:cd:4e:29:ea:f9:97:ba:d7:b5:37:10:99:f6:50:44:12:f1:
+        9a:c2:2d:c0:75:ad:70:1c:f1:b5:b6:5a:ac:f8:e8:2a:cf:3a:
+        5c:41:2b:59:3f:80:11:da:b9:c5:cb:eb:78:b4:53:65:2c:9b:
+        c3:75:8d:9c:bc:25:64:d3:fe:fb:e7:64:49:79:be:fb:42:0b:
+        a4:13:9d:50:0d:1d:f3:ee:c7:54:f8:d2:54:90:3e:dc:ed:98:
+        05:a3:fc:13:f0:59:82:8b:f1:59:90:1d:52:76:e1:bb:9f:eb:
+        ba:61:d4:f3:7f:4a:a0:d0:7b:5a:26:ba:f5:ab:ab:6b:ce:e4:
+        0c:ed:ef:90:02:8d:95:e6:6c:dd:55:8d:05:70:ba:94:d5:c5:
+        da:14:f1:99:11:dd:79:89:7a:2d:f0:f2:71:26:48:ea:70:71:
+        bc:a1:83:5f:20:a3:1d:49:a4:9a:47:89:9b:f0:aa:83:1c:5a:
+        54:cd:14:38:7e:87:76:d3:58:20:4b:c3:e1:91:ef:f9:c8:d1:
+        96:80:73:6e:37:16:dd:6a:de:4a:82:35:2d:64:3e:19:68:90:
+        01:fd:08:2e
+-----BEGIN CERTIFICATE-----
+MIIGWzCCBUOgAwIBAgIQDka4BT+dtYKHlHYYtJ3WHjANBgkqhkiG9w0BAQsFADBZ
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTMwMQYDVQQDEypE
+aWdpQ2VydCBHbG9iYWwgRzIgVExTIFJTQSBTSEEyNTYgMjAyMCBDQTEwHhcNMjYw
+NzA0MDAwMDAwWhcNMjYxMDAyMjM1OTU5WjBwMQswCQYDVQQGEwJVUzETMBEGA1UE
+CBMKQ2FsaWZvcm5pYTETMBEGA1UEBxMKTWVubG8gUGFyazEdMBsGA1UEChMUTWV0
+YSBQbGF0Zm9ybXMsIEluYy4xGDAWBgNVBAMMDyouaW5zdGFncmFtLmNvbTBZMBMG
+ByqGSM49AgEGCCqGSM49AwEHA0IABJNzfdUFIfOS+x7s1poSDHtaBQ8WCkmSP2bn
+GS8+L7WL4ZRwfQbRUxBwEyO0zAILC5xNz5t5lBwyzgRFiKtN5AqjggPRMIIDzTAf
+BgNVHSMEGDAWgBR0hYDAZsffN97PvSk3qgMdvu3NFzAdBgNVHQ4EFgQUEkKw++w/
+8L7hmVptSKb+sGuLzBkwawYDVR0RBGQwYoIPKi5pbnN0YWdyYW0uY29tghIqLmNk
+bmluc3RhZ3JhbS5jb22CDSouaWdzb25hci5jb22CEGNkbmluc3RhZ3JhbS5jb22C
+C2lnc29uYXIuY29tgg1pbnN0YWdyYW0uY29tMD4GA1UdIAQ3MDUwMwYGZ4EMAQIC
+MCkwJwYIKwYBBQUHAgEWG2h0dHA6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzAOBgNV
+HQ8BAf8EBAMCA4gwEwYDVR0lBAwwCgYIKwYBBQUHAwEwgZ8GA1UdHwSBlzCBlDBI
+oEagRIZCaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0R2xvYmFsRzJU
+TFNSU0FTSEEyNTYyMDIwQ0ExLTEuY3JsMEigRqBEhkJodHRwOi8vY3JsNC5kaWdp
+Y2VydC5jb20vRGlnaUNlcnRHbG9iYWxHMlRMU1JTQVNIQTI1NjIwMjBDQTEtMS5j
+cmwwgYcGCCsGAQUFBwEBBHsweTAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuZGln
+aWNlcnQuY29tMFEGCCsGAQUFBzAChkVodHRwOi8vY2FjZXJ0cy5kaWdpY2VydC5j
+b20vRGlnaUNlcnRHbG9iYWxHMlRMU1JTQVNIQTI1NjIwMjBDQTEtMS5jcnQwDAYD
+VR0TAQH/BAIwADCCAX0GCisGAQQB1nkCBAIEggFtBIIBaQFnAHYAwjF+V0UZo0Xu
+fzjespBB68fCIVoiv3/Vta12mtkOUs0AAAGfKnvY7AAABAMARzBFAiEA0S+oFJ5d
+MfHQmwnXMH+y9QYVUJTXxi4paAuKUBwhWbECIACWzGcOQ49NaVFnAxsA55DVrOvy
+1SIATvqwK51N9iJrAHYA1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXcA
+AAGfKnvZAQAABAMARzBFAiBxhQDggPPvStm/ymtBGtNdCJDZvWn9CeJb+juzgwgH
+swIhAIJgAaBoR9uNEqwsbsq1p+p99QdvSd7JRbAjAMX2JVGsAHUAlE5Dh/rswe+B
+8xkkJqgYZQHH0184AgE/cmd9VTcuGdgAAAGfKnvY/wAABAMARjBEAiBfv6dO65Ay
+JU5gvVnDI9WGlREa0qaLZy7Q+ZsbbHESdAIgZvpLSw09w4mkiPZPHSCYKCEV3rUr
+6L9JP+LajDVHlUAwDQYJKoZIhvcNAQELBQADggEBAGoRydNMvnDB8wvac95UYdYz
+7nvSOjp8l47hdrAce/jykWSI26PNTinq+Ze617U3EJn2UEQS8ZrCLcB1rXAc8bW2
+Wqz46CrPOlxBK1k/gBHaucXL63i0U2Usm8N1jZy8JWTT/vvnZEl5vvtCC6QTnVAN
+HfPux1T40lSQPtztmAWj/BPwWYKL8VmQHVJ24buf67ph1PN/SqDQe1omuvWrq2vO
+5Azt75ACjZXmbN1VjQVwupTVxdoU8ZkR3XmJei3w8nEmSOpwcbyhg18gox1JpJpH
+iZvwqoMcWlTNFDh+h3bTWCBLw+GR7/nI0ZaAc243Ft1q3kqCNS1kPhlokAH9CC4=
+-----END CERTIFICATE-----
+------------------
+        No extensions
+        ASN.1Cert, length=1228
+------details-----
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            0c:f5:bd:06:2b:56:02:f4:7a:b8:50:2c:23:cc:f0:66
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert Global Root G2
+        Validity
+            Not Before: Mar 30 00:00:00 2021 GMT
+            Not After : Mar 29 23:59:59 2031 GMT
+        Subject: C = US, O = DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:cc:f7:10:62:4f:a6:bb:63:6f:ed:90:52:56:c5:
+                    6d:27:7b:7a:12:56:8a:f1:f4:f9:d6:e7:e1:8f:bd:
+                    95:ab:f2:60:41:15:70:db:12:00:fa:27:0a:b5:57:
+                    38:5b:7d:b2:51:93:71:95:0e:6a:41:94:5b:35:1b:
+                    fa:7b:fa:bb:c5:be:24:30:fe:56:ef:c4:f3:7d:97:
+                    e3:14:f5:14:4d:cb:a7:10:f2:16:ea:ab:22:f0:31:
+                    22:11:61:69:90:26:ba:78:d9:97:1f:e3:7d:66:ab:
+                    75:44:95:73:c8:ac:ff:ef:5d:0a:8a:59:43:e1:ac:
+                    b2:3a:0f:f3:48:fc:d7:6b:37:c1:63:dc:de:46:d6:
+                    db:45:fe:7d:23:fd:90:e8:51:07:1e:51:a3:5f:ed:
+                    49:46:54:7f:2c:88:c5:f4:13:9c:97:15:3c:03:e8:
+                    a1:39:dc:69:0c:32:c1:af:16:57:4c:94:47:42:7c:
+                    a2:c8:9c:7d:e6:d4:4d:54:af:42:99:a8:c1:04:c2:
+                    77:9c:d6:48:e4:ce:11:e0:2a:80:99:f0:43:70:cf:
+                    3f:76:6b:d1:4c:49:ab:24:5e:c2:0d:82:fd:46:a8:
+                    ab:6c:93:cc:62:52:42:75:92:f8:9a:fa:5e:5e:b2:
+                    b0:61:e5:1f:1f:b9:7f:09:98:e8:3d:fa:83:7f:47:
+                    69:a1
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                74:85:80:C0:66:C7:DF:37:DE:CF:BD:29:37:AA:03:1D:BE:ED:CD:17
+            X509v3 Authority Key Identifier: 
+                4E:22:54:20:18:95:E6:E3:6E:E6:0F:FA:FA:B9:12:ED:06:17:8F:39
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.digicert.com
+                CA Issuers - URI:http://cacerts.digicert.com/DigiCertGlobalRootG2.crt
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://crl3.digicert.com/DigiCertGlobalRootG2.crl
+
+            X509v3 Certificate Policies: 
+                Policy: 2.16.840.1.114412.2.1
+                Policy: 2.23.140.1.1
+                Policy: 2.23.140.1.2.1
+                Policy: 2.23.140.1.2.2
+                Policy: 2.23.140.1.2.3
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        90:f1:70:cb:28:97:69:97:7c:74:fd:c0:fa:26:7b:53:ab:ad:
+        cd:65:fd:ba:9c:06:9c:8a:d7:5a:43:87:ed:4d:4c:56:5f:ad:
+        c1:c5:b5:05:20:2e:59:d1:ff:4a:f5:a0:2a:d8:b0:95:ad:c9:
+        2e:4a:3b:d7:a7:f6:6f:88:29:fc:30:3f:24:84:bb:c3:b7:7b:
+        93:07:2c:af:87:6b:76:33:ed:00:55:52:b2:59:9e:e4:b9:d0:
+        f3:df:e7:0f:fe:dd:f8:c4:b9:10:72:81:09:04:5f:cf:97:9e:
+        2e:32:75:8e:cf:9a:58:d2:57:31:7e:37:01:81:b2:66:6d:29:
+        1a:b1:66:09:6d:d1:6e:90:f4:b9:fa:2f:01:14:c5:5c:56:64:
+        01:d9:7d:87:a8:38:53:9f:8b:5d:46:6d:5c:c6:27:84:81:d4:
+        7e:8c:8c:a3:9b:52:e7:c6:88:ec:37:7c:2a:fb:f0:55:5a:38:
+        72:10:d8:00:13:cf:4c:73:db:aa:37:35:a8:29:81:69:9c:76:
+        bc:de:18:7b:90:d4:ca:cf:ef:67:03:fd:04:5a:21:16:b1:ff:
+        ea:3f:df:dc:82:f5:eb:f4:59:92:23:0d:24:2a:95:25:4c:ca:
+        a1:91:e6:d4:b7:ac:87:74:b3:f1:6d:a3:99:db:f9:d5:bd:84:
+        40:9f:07:98
+-----BEGIN CERTIFICATE-----
+MIIEyDCCA7CgAwIBAgIQDPW9BitWAvR6uFAsI8zwZjANBgkqhkiG9w0BAQsFADBh
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBH
+MjAeFw0yMTAzMzAwMDAwMDBaFw0zMTAzMjkyMzU5NTlaMFkxCzAJBgNVBAYTAlVT
+MRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxMzAxBgNVBAMTKkRpZ2lDZXJ0IEdsb2Jh
+bCBHMiBUTFMgUlNBIFNIQTI1NiAyMDIwIENBMTCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBAMz3EGJPprtjb+2QUlbFbSd7ehJWivH0+dbn4Y+9lavyYEEV
+cNsSAPonCrVXOFt9slGTcZUOakGUWzUb+nv6u8W+JDD+Vu/E832X4xT1FE3LpxDy
+FuqrIvAxIhFhaZAmunjZlx/jfWardUSVc8is/+9dCopZQ+GssjoP80j812s3wWPc
+3kbW20X+fSP9kOhRBx5Ro1/tSUZUfyyIxfQTnJcVPAPooTncaQwywa8WV0yUR0J8
+osicfebUTVSvQpmowQTCd5zWSOTOEeAqgJnwQ3DPP3Zr0UxJqyRewg2C/Uaoq2yT
+zGJSQnWS+Jr6Xl6ysGHlHx+5fwmY6D36g39HaaECAwEAAaOCAYIwggF+MBIGA1Ud
+EwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFHSFgMBmx9833s+9KTeqAx2+7c0XMB8G
+A1UdIwQYMBaAFE4iVCAYlebjbuYP+vq5Eu0GF485MA4GA1UdDwEB/wQEAwIBhjAd
+BgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwdgYIKwYBBQUHAQEEajBoMCQG
+CCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wQAYIKwYBBQUHMAKG
+NGh0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydEdsb2JhbFJvb3RH
+Mi5jcnQwQgYDVR0fBDswOTA3oDWgM4YxaHR0cDovL2NybDMuZGlnaWNlcnQuY29t
+L0RpZ2lDZXJ0R2xvYmFsUm9vdEcyLmNybDA9BgNVHSAENjA0MAsGCWCGSAGG/WwC
+ATAHBgVngQwBATAIBgZngQwBAgEwCAYGZ4EMAQICMAgGBmeBDAECAzANBgkqhkiG
+9w0BAQsFAAOCAQEAkPFwyyiXaZd8dP3A+iZ7U6utzWX9upwGnIrXWkOH7U1MVl+t
+wcW1BSAuWdH/SvWgKtiwla3JLko716f2b4gp/DA/JIS7w7d7kwcsr4drdjPtAFVS
+slme5LnQ89/nD/7d+MS5EHKBCQRfz5eeLjJ1js+aWNJXMX43AYGyZm0pGrFmCW3R
+bpD0ufovARTFXFZkAdl9h6g4U5+LXUZtXMYnhIHUfoyMo5tS58aI7Dd8KvvwVVo4
+chDYABPPTHPbqjc1qCmBaZx2vN4Ye5DUys/vZwP9BFohFrH/6j/f3IL16/RZkiMN
+JCqVJUzKoZHm1Lesh3Sz8W2jmdv51b2EQJ8HmA==
+-----END CERTIFICATE-----
+------------------
+        No extensions
+
+    CertificateVerify, Length=74
+      Signature Algorithm: ecdsa_secp256r1_sha256 (0x0403)
+      Signature (len=70): 3044022071174C84CE47F27CCED2B98F4BE1EE6CC2D9BEF3C700D347CE32C021BFD1713102204C5C26834DF2C42D67469C7A25A3DC03E90F119097644606A50F987D55327DDD
+
+    Finished, Length=32
+      verify_data (len=32): 9F2A01FFD0AAADE764395098AE3F6EB1BB628D1839EEB3C9055E8AC15152B6E2
+
+Sent TLS Record
+Header:
+  Version = TLS 1.2 (0x303)
+  Content Type = ChangeCipherSpec (20)
+  Length = 1
+    change_cipher_spec (1)
+
+Sent TLS Record
+Header:
+  Version = TLS 1.2 (0x303)
+  Content Type = ApplicationData (23)
+  Length = 53
+  Inner Content Type = Handshake (22)
+    Finished, Length=32
+      verify_data (len=32): 2BDD8D0550D68258502D7E15F9A47A82A4E286CB804929C41C780D4451729161
+
+---
+Certificate chain
+ 0 s:C=US, ST=California, L=Menlo Park, O=Meta Platforms, Inc., CN=*.instagram.com
+   i:C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+   a:PKEY: EC, (prime256v1); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Jul  4 00:00:00 2026 GMT; NotAfter: Oct  2 23:59:59 2026 GMT
+ 1 s:C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Global Root G2
+   a:PKEY: RSA, 2048 (bit); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Mar 30 00:00:00 2021 GMT; NotAfter: Mar 29 23:59:59 2031 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIGWzCCBUOgAwIBAgIQDka4BT+dtYKHlHYYtJ3WHjANBgkqhkiG9w0BAQsFADBZ
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTMwMQYDVQQDEypE
+aWdpQ2VydCBHbG9iYWwgRzIgVExTIFJTQSBTSEEyNTYgMjAyMCBDQTEwHhcNMjYw
+NzA0MDAwMDAwWhcNMjYxMDAyMjM1OTU5WjBwMQswCQYDVQQGEwJVUzETMBEGA1UE
+CBMKQ2FsaWZvcm5pYTETMBEGA1UEBxMKTWVubG8gUGFyazEdMBsGA1UEChMUTWV0
+YSBQbGF0Zm9ybXMsIEluYy4xGDAWBgNVBAMMDyouaW5zdGFncmFtLmNvbTBZMBMG
+ByqGSM49AgEGCCqGSM49AwEHA0IABJNzfdUFIfOS+x7s1poSDHtaBQ8WCkmSP2bn
+GS8+L7WL4ZRwfQbRUxBwEyO0zAILC5xNz5t5lBwyzgRFiKtN5AqjggPRMIIDzTAf
+BgNVHSMEGDAWgBR0hYDAZsffN97PvSk3qgMdvu3NFzAdBgNVHQ4EFgQUEkKw++w/
+8L7hmVptSKb+sGuLzBkwawYDVR0RBGQwYoIPKi5pbnN0YWdyYW0uY29tghIqLmNk
+bmluc3RhZ3JhbS5jb22CDSouaWdzb25hci5jb22CEGNkbmluc3RhZ3JhbS5jb22C
+C2lnc29uYXIuY29tgg1pbnN0YWdyYW0uY29tMD4GA1UdIAQ3MDUwMwYGZ4EMAQIC
+MCkwJwYIKwYBBQUHAgEWG2h0dHA6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzAOBgNV
+HQ8BAf8EBAMCA4gwEwYDVR0lBAwwCgYIKwYBBQUHAwEwgZ8GA1UdHwSBlzCBlDBI
+oEagRIZCaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0R2xvYmFsRzJU
+TFNSU0FTSEEyNTYyMDIwQ0ExLTEuY3JsMEigRqBEhkJodHRwOi8vY3JsNC5kaWdp
+Y2VydC5jb20vRGlnaUNlcnRHbG9iYWxHMlRMU1JTQVNIQTI1NjIwMjBDQTEtMS5j
+cmwwgYcGCCsGAQUFBwEBBHsweTAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuZGln
+aWNlcnQuY29tMFEGCCsGAQUFBzAChkVodHRwOi8vY2FjZXJ0cy5kaWdpY2VydC5j
+b20vRGlnaUNlcnRHbG9iYWxHMlRMU1JTQVNIQTI1NjIwMjBDQTEtMS5jcnQwDAYD
+VR0TAQH/BAIwADCCAX0GCisGAQQB1nkCBAIEggFtBIIBaQFnAHYAwjF+V0UZo0Xu
+fzjespBB68fCIVoiv3/Vta12mtkOUs0AAAGfKnvY7AAABAMARzBFAiEA0S+oFJ5d
+MfHQmwnXMH+y9QYVUJTXxi4paAuKUBwhWbECIACWzGcOQ49NaVFnAxsA55DVrOvy
+1SIATvqwK51N9iJrAHYA1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXcA
+AAGfKnvZAQAABAMARzBFAiBxhQDggPPvStm/ymtBGtNdCJDZvWn9CeJb+juzgwgH
+swIhAIJgAaBoR9uNEqwsbsq1p+p99QdvSd7JRbAjAMX2JVGsAHUAlE5Dh/rswe+B
+8xkkJqgYZQHH0184AgE/cmd9VTcuGdgAAAGfKnvY/wAABAMARjBEAiBfv6dO65Ay
+JU5gvVnDI9WGlREa0qaLZy7Q+ZsbbHESdAIgZvpLSw09w4mkiPZPHSCYKCEV3rUr
+6L9JP+LajDVHlUAwDQYJKoZIhvcNAQELBQADggEBAGoRydNMvnDB8wvac95UYdYz
+7nvSOjp8l47hdrAce/jykWSI26PNTinq+Ze617U3EJn2UEQS8ZrCLcB1rXAc8bW2
+Wqz46CrPOlxBK1k/gBHaucXL63i0U2Usm8N1jZy8JWTT/vvnZEl5vvtCC6QTnVAN
+HfPux1T40lSQPtztmAWj/BPwWYKL8VmQHVJ24buf67ph1PN/SqDQe1omuvWrq2vO
+5Azt75ACjZXmbN1VjQVwupTVxdoU8ZkR3XmJei3w8nEmSOpwcbyhg18gox1JpJpH
+iZvwqoMcWlTNFDh+h3bTWCBLw+GR7/nI0ZaAc243Ft1q3kqCNS1kPhlokAH9CC4=
+-----END CERTIFICATE-----
+subject=C=US, ST=California, L=Menlo Park, O=Meta Platforms, Inc., CN=*.instagram.com
+issuer=C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ecdsa_secp256r1_sha256
+Negotiated TLS1.3 group: X25519MLKEM768
+---
+SSL handshake has read 3468 bytes and written 1619 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_CHACHA20_POLY1305_SHA256
+Protocol: TLSv1.3
+Server public key is 256 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+Sent TLS Record
+Header:
+  Version = TLS 1.2 (0x303)
+  Content Type = ApplicationData (23)
+  Length = 19
+  Inner Content Type = Alert (21)
+    Level=warning(1), description=close notify(0)
+

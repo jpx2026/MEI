@@ -1,0 +1,566 @@
+CONNECTED(00000003)
+Sent TLS Record
+Header:
+  Version = TLS 1.0 (0x301)
+  Content Type = Handshake (22)
+  Length = 124
+    ClientHello, Length=120
+      client_version=0x302 (TLS 1.1)
+      Random:
+        gmt_unix_time=0x3C28C140
+        random_bytes (len=28): 95064DEA95CDEA5E236C882131FFD8D9DA246D614FD7F0BB17D095ED
+      session_id (len=0): 
+      cipher_suites (len=16)
+        {0xC0, 0x0A} TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+        {0xC0, 0x14} TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+        {0x00, 0x39} TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+        {0xC0, 0x09} TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+        {0xC0, 0x13} TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+        {0x00, 0x33} TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+        {0x00, 0x35} TLS_RSA_WITH_AES_256_CBC_SHA
+        {0x00, 0x2F} TLS_RSA_WITH_AES_128_CBC_SHA
+      compression_methods (len=1)
+        No Compression (0x00)
+      extensions, length = 63
+        extension_type=renegotiate(65281), length=1
+            <EMPTY>
+        extension_type=server_name(0), length=18
+          0000 - 00 10 00 00 0d 69 6e 73-74 61 67 72 61 6d 2e   .....instagram.
+          000f - 63 6f 6d                                       com
+        extension_type=ec_point_formats(11), length=4
+          uncompressed (0)
+          ansiX962_compressed_prime (1)
+          ansiX962_compressed_char2 (2)
+        extension_type=supported_groups(10), length=12
+          ecdh_x25519 (29)
+          secp256r1 (P-256) (23)
+          ecdh_x448 (30)
+          secp384r1 (P-384) (24)
+          secp521r1 (P-521) (25)
+        extension_type=session_ticket(35), length=0
+        extension_type=encrypt_then_mac(22), length=0
+        extension_type=extended_master_secret(23), length=0
+
+Received TLS Record
+Header:
+  Version = TLS 1.1 (0x302)
+  Content Type = Handshake (22)
+  Length = 97
+    ServerHello, Length=93
+      server_version=0x302 (TLS 1.1)
+      Random:
+        gmt_unix_time=0xA64B4713
+        random_bytes (len=28): 79CB67CBC65848FC4AAA4EC0BFE19D557FEB18EE444F574E47524400
+      session_id (len=32): 9D99E9E083F772920481EDB13B588AADA101EE74ED6FCBD464106C95494E6054
+      cipher_suite {0xC0, 0x09} TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+      compression_method: No Compression (0x00)
+      extensions, length = 21
+        extension_type=renegotiate(65281), length=1
+            <EMPTY>
+        extension_type=ec_point_formats(11), length=4
+          uncompressed (0)
+          ansiX962_compressed_prime (1)
+          ansiX962_compressed_char2 (2)
+        extension_type=encrypt_then_mac(22), length=0
+        extension_type=extended_master_secret(23), length=0
+
+Received TLS Record
+Header:
+  Version = TLS 1.1 (0x302)
+  Content Type = Handshake (22)
+  Length = 4058
+    Certificate, Length=4054
+      certificate_list, length=4051
+        ASN.1Cert, length=1631
+------details-----
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            0e:46:b8:05:3f:9d:b5:82:87:94:76:18:b4:9d:d6:1e
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, O = DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1
+        Validity
+            Not Before: Jul  4 00:00:00 2026 GMT
+            Not After : Oct  2 23:59:59 2026 GMT
+        Subject: C = US, ST = California, L = Menlo Park, O = "Meta Platforms, Inc.", CN = *.instagram.com
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:93:73:7d:d5:05:21:f3:92:fb:1e:ec:d6:9a:12:
+                    0c:7b:5a:05:0f:16:0a:49:92:3f:66:e7:19:2f:3e:
+                    2f:b5:8b:e1:94:70:7d:06:d1:53:10:70:13:23:b4:
+                    cc:02:0b:0b:9c:4d:cf:9b:79:94:1c:32:ce:04:45:
+                    88:ab:4d:e4:0a
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                74:85:80:C0:66:C7:DF:37:DE:CF:BD:29:37:AA:03:1D:BE:ED:CD:17
+            X509v3 Subject Key Identifier: 
+                12:42:B0:FB:EC:3F:F0:BE:E1:99:5A:6D:48:A6:FE:B0:6B:8B:CC:19
+            X509v3 Subject Alternative Name: 
+                DNS:*.instagram.com, DNS:*.cdninstagram.com, DNS:*.igsonar.com, DNS:cdninstagram.com, DNS:igsonar.com, DNS:instagram.com
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.2
+                  CPS: http://www.digicert.com/CPS
+            X509v3 Key Usage: critical
+                Digital Signature, Key Agreement
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://crl3.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crl
+
+                Full Name:
+                  URI:http://crl4.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crl
+
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.digicert.com
+                CA Issuers - URI:http://cacerts.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crt
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            CT Precertificate SCTs: 
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : C2:31:7E:57:45:19:A3:45:EE:7F:38:DE:B2:90:41:EB:
+                                C7:C2:21:5A:22:BF:7F:D5:B5:AD:76:9A:D9:0E:52:CD
+                    Timestamp : Jul  4 00:16:27.372 2026 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:45:02:21:00:D1:2F:A8:14:9E:5D:31:F1:D0:9B:09:
+                                D7:30:7F:B2:F5:06:15:50:94:D7:C6:2E:29:68:0B:8A:
+                                50:1C:21:59:B1:02:20:00:96:CC:67:0E:43:8F:4D:69:
+                                51:67:03:1B:00:E7:90:D5:AC:EB:F2:D5:22:00:4E:FA:
+                                B0:2B:9D:4D:F6:22:6B
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : D7:6D:7D:10:D1:A7:F5:77:C2:C7:E9:5F:D7:00:BF:F9:
+                                82:C9:33:5A:65:E1:D0:B3:01:73:17:C0:C8:C5:69:77
+                    Timestamp : Jul  4 00:16:27.393 2026 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:45:02:20:71:85:00:E0:80:F3:EF:4A:D9:BF:CA:6B:
+                                41:1A:D3:5D:08:90:D9:BD:69:FD:09:E2:5B:FA:3B:B3:
+                                83:08:07:B3:02:21:00:82:60:01:A0:68:47:DB:8D:12:
+                                AC:2C:6E:CA:B5:A7:EA:7D:F5:07:6F:49:DE:C9:45:B0:
+                                23:00:C5:F6:25:51:AC
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : 94:4E:43:87:FA:EC:C1:EF:81:F3:19:24:26:A8:18:65:
+                                01:C7:D3:5F:38:02:01:3F:72:67:7D:55:37:2E:19:D8
+                    Timestamp : Jul  4 00:16:27.391 2026 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:44:02:20:5F:BF:A7:4E:EB:90:32:25:4E:60:BD:59:
+                                C3:23:D5:86:95:11:1A:D2:A6:8B:67:2E:D0:F9:9B:1B:
+                                6C:71:12:74:02:20:66:FA:4B:4B:0D:3D:C3:89:A4:88:
+                                F6:4F:1D:20:98:28:21:15:DE:B5:2B:E8:BF:49:3F:E2:
+                                DA:8C:35:47:95:40
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        6a:11:c9:d3:4c:be:70:c1:f3:0b:da:73:de:54:61:d6:33:ee:
+        7b:d2:3a:3a:7c:97:8e:e1:76:b0:1c:7b:f8:f2:91:64:88:db:
+        a3:cd:4e:29:ea:f9:97:ba:d7:b5:37:10:99:f6:50:44:12:f1:
+        9a:c2:2d:c0:75:ad:70:1c:f1:b5:b6:5a:ac:f8:e8:2a:cf:3a:
+        5c:41:2b:59:3f:80:11:da:b9:c5:cb:eb:78:b4:53:65:2c:9b:
+        c3:75:8d:9c:bc:25:64:d3:fe:fb:e7:64:49:79:be:fb:42:0b:
+        a4:13:9d:50:0d:1d:f3:ee:c7:54:f8:d2:54:90:3e:dc:ed:98:
+        05:a3:fc:13:f0:59:82:8b:f1:59:90:1d:52:76:e1:bb:9f:eb:
+        ba:61:d4:f3:7f:4a:a0:d0:7b:5a:26:ba:f5:ab:ab:6b:ce:e4:
+        0c:ed:ef:90:02:8d:95:e6:6c:dd:55:8d:05:70:ba:94:d5:c5:
+        da:14:f1:99:11:dd:79:89:7a:2d:f0:f2:71:26:48:ea:70:71:
+        bc:a1:83:5f:20:a3:1d:49:a4:9a:47:89:9b:f0:aa:83:1c:5a:
+        54:cd:14:38:7e:87:76:d3:58:20:4b:c3:e1:91:ef:f9:c8:d1:
+        96:80:73:6e:37:16:dd:6a:de:4a:82:35:2d:64:3e:19:68:90:
+        01:fd:08:2e
+-----BEGIN CERTIFICATE-----
+MIIGWzCCBUOgAwIBAgIQDka4BT+dtYKHlHYYtJ3WHjANBgkqhkiG9w0BAQsFADBZ
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTMwMQYDVQQDEypE
+aWdpQ2VydCBHbG9iYWwgRzIgVExTIFJTQSBTSEEyNTYgMjAyMCBDQTEwHhcNMjYw
+NzA0MDAwMDAwWhcNMjYxMDAyMjM1OTU5WjBwMQswCQYDVQQGEwJVUzETMBEGA1UE
+CBMKQ2FsaWZvcm5pYTETMBEGA1UEBxMKTWVubG8gUGFyazEdMBsGA1UEChMUTWV0
+YSBQbGF0Zm9ybXMsIEluYy4xGDAWBgNVBAMMDyouaW5zdGFncmFtLmNvbTBZMBMG
+ByqGSM49AgEGCCqGSM49AwEHA0IABJNzfdUFIfOS+x7s1poSDHtaBQ8WCkmSP2bn
+GS8+L7WL4ZRwfQbRUxBwEyO0zAILC5xNz5t5lBwyzgRFiKtN5AqjggPRMIIDzTAf
+BgNVHSMEGDAWgBR0hYDAZsffN97PvSk3qgMdvu3NFzAdBgNVHQ4EFgQUEkKw++w/
+8L7hmVptSKb+sGuLzBkwawYDVR0RBGQwYoIPKi5pbnN0YWdyYW0uY29tghIqLmNk
+bmluc3RhZ3JhbS5jb22CDSouaWdzb25hci5jb22CEGNkbmluc3RhZ3JhbS5jb22C
+C2lnc29uYXIuY29tgg1pbnN0YWdyYW0uY29tMD4GA1UdIAQ3MDUwMwYGZ4EMAQIC
+MCkwJwYIKwYBBQUHAgEWG2h0dHA6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzAOBgNV
+HQ8BAf8EBAMCA4gwEwYDVR0lBAwwCgYIKwYBBQUHAwEwgZ8GA1UdHwSBlzCBlDBI
+oEagRIZCaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0R2xvYmFsRzJU
+TFNSU0FTSEEyNTYyMDIwQ0ExLTEuY3JsMEigRqBEhkJodHRwOi8vY3JsNC5kaWdp
+Y2VydC5jb20vRGlnaUNlcnRHbG9iYWxHMlRMU1JTQVNIQTI1NjIwMjBDQTEtMS5j
+cmwwgYcGCCsGAQUFBwEBBHsweTAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuZGln
+aWNlcnQuY29tMFEGCCsGAQUFBzAChkVodHRwOi8vY2FjZXJ0cy5kaWdpY2VydC5j
+b20vRGlnaUNlcnRHbG9iYWxHMlRMU1JTQVNIQTI1NjIwMjBDQTEtMS5jcnQwDAYD
+VR0TAQH/BAIwADCCAX0GCisGAQQB1nkCBAIEggFtBIIBaQFnAHYAwjF+V0UZo0Xu
+fzjespBB68fCIVoiv3/Vta12mtkOUs0AAAGfKnvY7AAABAMARzBFAiEA0S+oFJ5d
+MfHQmwnXMH+y9QYVUJTXxi4paAuKUBwhWbECIACWzGcOQ49NaVFnAxsA55DVrOvy
+1SIATvqwK51N9iJrAHYA1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXcA
+AAGfKnvZAQAABAMARzBFAiBxhQDggPPvStm/ymtBGtNdCJDZvWn9CeJb+juzgwgH
+swIhAIJgAaBoR9uNEqwsbsq1p+p99QdvSd7JRbAjAMX2JVGsAHUAlE5Dh/rswe+B
+8xkkJqgYZQHH0184AgE/cmd9VTcuGdgAAAGfKnvY/wAABAMARjBEAiBfv6dO65Ay
+JU5gvVnDI9WGlREa0qaLZy7Q+ZsbbHESdAIgZvpLSw09w4mkiPZPHSCYKCEV3rUr
+6L9JP+LajDVHlUAwDQYJKoZIhvcNAQELBQADggEBAGoRydNMvnDB8wvac95UYdYz
+7nvSOjp8l47hdrAce/jykWSI26PNTinq+Ze617U3EJn2UEQS8ZrCLcB1rXAc8bW2
+Wqz46CrPOlxBK1k/gBHaucXL63i0U2Usm8N1jZy8JWTT/vvnZEl5vvtCC6QTnVAN
+HfPux1T40lSQPtztmAWj/BPwWYKL8VmQHVJ24buf67ph1PN/SqDQe1omuvWrq2vO
+5Azt75ACjZXmbN1VjQVwupTVxdoU8ZkR3XmJei3w8nEmSOpwcbyhg18gox1JpJpH
+iZvwqoMcWlTNFDh+h3bTWCBLw+GR7/nI0ZaAc243Ft1q3kqCNS1kPhlokAH9CC4=
+-----END CERTIFICATE-----
+------------------
+        ASN.1Cert, length=1228
+------details-----
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            0c:f5:bd:06:2b:56:02:f4:7a:b8:50:2c:23:cc:f0:66
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert Global Root G2
+        Validity
+            Not Before: Mar 30 00:00:00 2021 GMT
+            Not After : Mar 29 23:59:59 2031 GMT
+        Subject: C = US, O = DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:cc:f7:10:62:4f:a6:bb:63:6f:ed:90:52:56:c5:
+                    6d:27:7b:7a:12:56:8a:f1:f4:f9:d6:e7:e1:8f:bd:
+                    95:ab:f2:60:41:15:70:db:12:00:fa:27:0a:b5:57:
+                    38:5b:7d:b2:51:93:71:95:0e:6a:41:94:5b:35:1b:
+                    fa:7b:fa:bb:c5:be:24:30:fe:56:ef:c4:f3:7d:97:
+                    e3:14:f5:14:4d:cb:a7:10:f2:16:ea:ab:22:f0:31:
+                    22:11:61:69:90:26:ba:78:d9:97:1f:e3:7d:66:ab:
+                    75:44:95:73:c8:ac:ff:ef:5d:0a:8a:59:43:e1:ac:
+                    b2:3a:0f:f3:48:fc:d7:6b:37:c1:63:dc:de:46:d6:
+                    db:45:fe:7d:23:fd:90:e8:51:07:1e:51:a3:5f:ed:
+                    49:46:54:7f:2c:88:c5:f4:13:9c:97:15:3c:03:e8:
+                    a1:39:dc:69:0c:32:c1:af:16:57:4c:94:47:42:7c:
+                    a2:c8:9c:7d:e6:d4:4d:54:af:42:99:a8:c1:04:c2:
+                    77:9c:d6:48:e4:ce:11:e0:2a:80:99:f0:43:70:cf:
+                    3f:76:6b:d1:4c:49:ab:24:5e:c2:0d:82:fd:46:a8:
+                    ab:6c:93:cc:62:52:42:75:92:f8:9a:fa:5e:5e:b2:
+                    b0:61:e5:1f:1f:b9:7f:09:98:e8:3d:fa:83:7f:47:
+                    69:a1
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                74:85:80:C0:66:C7:DF:37:DE:CF:BD:29:37:AA:03:1D:BE:ED:CD:17
+            X509v3 Authority Key Identifier: 
+                4E:22:54:20:18:95:E6:E3:6E:E6:0F:FA:FA:B9:12:ED:06:17:8F:39
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.digicert.com
+                CA Issuers - URI:http://cacerts.digicert.com/DigiCertGlobalRootG2.crt
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://crl3.digicert.com/DigiCertGlobalRootG2.crl
+
+            X509v3 Certificate Policies: 
+                Policy: 2.16.840.1.114412.2.1
+                Policy: 2.23.140.1.1
+                Policy: 2.23.140.1.2.1
+                Policy: 2.23.140.1.2.2
+                Policy: 2.23.140.1.2.3
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        90:f1:70:cb:28:97:69:97:7c:74:fd:c0:fa:26:7b:53:ab:ad:
+        cd:65:fd:ba:9c:06:9c:8a:d7:5a:43:87:ed:4d:4c:56:5f:ad:
+        c1:c5:b5:05:20:2e:59:d1:ff:4a:f5:a0:2a:d8:b0:95:ad:c9:
+        2e:4a:3b:d7:a7:f6:6f:88:29:fc:30:3f:24:84:bb:c3:b7:7b:
+        93:07:2c:af:87:6b:76:33:ed:00:55:52:b2:59:9e:e4:b9:d0:
+        f3:df:e7:0f:fe:dd:f8:c4:b9:10:72:81:09:04:5f:cf:97:9e:
+        2e:32:75:8e:cf:9a:58:d2:57:31:7e:37:01:81:b2:66:6d:29:
+        1a:b1:66:09:6d:d1:6e:90:f4:b9:fa:2f:01:14:c5:5c:56:64:
+        01:d9:7d:87:a8:38:53:9f:8b:5d:46:6d:5c:c6:27:84:81:d4:
+        7e:8c:8c:a3:9b:52:e7:c6:88:ec:37:7c:2a:fb:f0:55:5a:38:
+        72:10:d8:00:13:cf:4c:73:db:aa:37:35:a8:29:81:69:9c:76:
+        bc:de:18:7b:90:d4:ca:cf:ef:67:03:fd:04:5a:21:16:b1:ff:
+        ea:3f:df:dc:82:f5:eb:f4:59:92:23:0d:24:2a:95:25:4c:ca:
+        a1:91:e6:d4:b7:ac:87:74:b3:f1:6d:a3:99:db:f9:d5:bd:84:
+        40:9f:07:98
+-----BEGIN CERTIFICATE-----
+MIIEyDCCA7CgAwIBAgIQDPW9BitWAvR6uFAsI8zwZjANBgkqhkiG9w0BAQsFADBh
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBH
+MjAeFw0yMTAzMzAwMDAwMDBaFw0zMTAzMjkyMzU5NTlaMFkxCzAJBgNVBAYTAlVT
+MRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxMzAxBgNVBAMTKkRpZ2lDZXJ0IEdsb2Jh
+bCBHMiBUTFMgUlNBIFNIQTI1NiAyMDIwIENBMTCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBAMz3EGJPprtjb+2QUlbFbSd7ehJWivH0+dbn4Y+9lavyYEEV
+cNsSAPonCrVXOFt9slGTcZUOakGUWzUb+nv6u8W+JDD+Vu/E832X4xT1FE3LpxDy
+FuqrIvAxIhFhaZAmunjZlx/jfWardUSVc8is/+9dCopZQ+GssjoP80j812s3wWPc
+3kbW20X+fSP9kOhRBx5Ro1/tSUZUfyyIxfQTnJcVPAPooTncaQwywa8WV0yUR0J8
+osicfebUTVSvQpmowQTCd5zWSOTOEeAqgJnwQ3DPP3Zr0UxJqyRewg2C/Uaoq2yT
+zGJSQnWS+Jr6Xl6ysGHlHx+5fwmY6D36g39HaaECAwEAAaOCAYIwggF+MBIGA1Ud
+EwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFHSFgMBmx9833s+9KTeqAx2+7c0XMB8G
+A1UdIwQYMBaAFE4iVCAYlebjbuYP+vq5Eu0GF485MA4GA1UdDwEB/wQEAwIBhjAd
+BgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwdgYIKwYBBQUHAQEEajBoMCQG
+CCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wQAYIKwYBBQUHMAKG
+NGh0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydEdsb2JhbFJvb3RH
+Mi5jcnQwQgYDVR0fBDswOTA3oDWgM4YxaHR0cDovL2NybDMuZGlnaWNlcnQuY29t
+L0RpZ2lDZXJ0R2xvYmFsUm9vdEcyLmNybDA9BgNVHSAENjA0MAsGCWCGSAGG/WwC
+ATAHBgVngQwBATAIBgZngQwBAgEwCAYGZ4EMAQICMAgGBmeBDAECAzANBgkqhkiG
+9w0BAQsFAAOCAQEAkPFwyyiXaZd8dP3A+iZ7U6utzWX9upwGnIrXWkOH7U1MVl+t
+wcW1BSAuWdH/SvWgKtiwla3JLko716f2b4gp/DA/JIS7w7d7kwcsr4drdjPtAFVS
+slme5LnQ89/nD/7d+MS5EHKBCQRfz5eeLjJ1js+aWNJXMX43AYGyZm0pGrFmCW3R
+bpD0ufovARTFXFZkAdl9h6g4U5+LXUZtXMYnhIHUfoyMo5tS58aI7Dd8KvvwVVo4
+chDYABPPTHPbqjc1qCmBaZx2vN4Ye5DUys/vZwP9BFohFrH/6j/f3IL16/RZkiMN
+JCqVJUzKoZHm1Lesh3Sz8W2jmdv51b2EQJ8HmA==
+-----END CERTIFICATE-----
+------------------
+        ASN.1Cert, length=1183
+------details-----
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            0e:7d:75:23:5c:a8:37:61:57:7f:4c:cd:24:cd:6d:1d
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert High Assurance EV Root CA
+        Validity
+            Not Before: Oct 29 00:00:00 2024 GMT
+            Not After : Nov  8 23:59:59 2031 GMT
+        Subject: C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert Global Root G2
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:bb:37:cd:34:dc:7b:6b:c9:b2:68:90:ad:4a:75:
+                    ff:46:ba:21:0a:08:8d:f5:19:54:c9:fb:88:db:f3:
+                    ae:f2:3a:89:91:3c:7a:e6:ab:06:1a:6b:cf:ac:2d:
+                    e8:5e:09:24:44:ba:62:9a:7e:d6:a3:a8:7e:e0:54:
+                    75:20:05:ac:50:b7:9c:63:1a:6c:30:dc:da:1f:19:
+                    b1:d7:1e:de:fd:d7:e0:cb:94:83:37:ae:ec:1f:43:
+                    4e:dd:7b:2c:d2:bd:2e:a5:2f:e4:a9:b8:ad:3a:d4:
+                    99:a4:b6:25:e9:9b:6b:00:60:92:60:ff:4f:21:49:
+                    18:f7:67:90:ab:61:06:9c:8f:f2:ba:e9:b4:e9:92:
+                    32:6b:b5:f3:57:e8:5d:1b:cd:8c:1d:ab:95:04:95:
+                    49:f3:35:2d:96:e3:49:6d:dd:77:e3:fb:49:4b:b4:
+                    ac:55:07:a9:8f:95:b3:b4:23:bb:4c:6d:45:f0:f6:
+                    a9:b2:95:30:b4:fd:4c:55:8c:27:4a:57:14:7c:82:
+                    9d:cd:73:92:d3:16:4a:06:0c:8c:50:d1:8f:1e:09:
+                    be:17:a1:e6:21:ca:fd:83:e5:10:bc:83:a5:0a:c4:
+                    67:28:f6:73:14:14:3d:46:76:c3:87:14:89:21:34:
+                    4d:af:0f:45:0c:a6:49:a1:ba:bb:9c:c5:b1:33:83:
+                    29:85
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                4E:22:54:20:18:95:E6:E3:6E:E6:0F:FA:FA:B9:12:ED:06:17:8F:39
+            X509v3 Authority Key Identifier: 
+                B1:3E:C3:69:03:F8:BF:47:01:D4:98:26:1A:08:02:EF:63:64:2B:C3
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.digicert.cn
+                CA Issuers - URI:http://cacerts.digicert.cn/DigiCertHighAssuranceEVRootCA.crt
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://crl.digicert.cn/DigiCertHighAssuranceEVRootCA.crl
+
+            X509v3 Certificate Policies: 
+                Policy: X509v3 Any Policy
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        3d:8d:07:df:c5:8a:a1:18:9c:ab:e8:a6:a1:74:e8:5e:c6:2c:
+        86:75:ec:09:e5:df:a5:32:6c:f8:73:9d:8d:59:1a:a5:04:05:
+        c5:fc:c6:50:79:c7:07:24:69:73:cd:f8:4c:da:59:17:a0:0e:
+        33:14:ed:2b:f1:48:fb:c9:7c:bb:7d:ee:06:e2:ab:a0:91:43:
+        8b:7e:30:15:a9:4e:d3:97:f8:0b:80:0b:13:1e:c1:0b:19:50:
+        c4:0d:72:ba:92:92:e5:d4:d3:be:73:b3:60:39:a7:df:4f:2a:
+        0f:8a:73:47:3e:ed:c5:6b:ab:1d:74:86:40:38:40:0d:2a:f8:
+        36:fc:81:85:00:90:e8:9d:dc:8f:1c:4d:34:f9:6b:8a:82:5f:
+        0d:32:1e:22:fc:1e:19:41:cb:1b:13:26:56:23:b3:47:b9:51:
+        f7:49:26:4b:5e:6d:b7:95:50:41:ab:d5:60:6b:0c:01:73:03:
+        45:0b:ef:09:1a:72:a4:6c:2b:7c:88:a9:48:e1:ff:48:98:c5:
+        0a:94:45:5e:09:ad:04:6b:1b:59:c2:54:77:f3:6b:0b:c5:c2:
+        66:98:75:f4:0b:f7:35:f3:b6:4d:ce:0d:98:a9:da:3c:2c:c0:
+        93:95:81:a8:c9:e8:87:ad:9c:fc:1d:fd:14:4a:d0:6e:9f:bf:
+        bd:99:f0:b5
+-----BEGIN CERTIFICATE-----
+MIIEmzCCA4OgAwIBAgIQDn11I1yoN2FXf0zNJM1tHTANBgkqhkiG9w0BAQsFADBs
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMSswKQYDVQQDEyJEaWdpQ2VydCBIaWdoIEFzc3VyYW5j
+ZSBFViBSb290IENBMB4XDTI0MTAyOTAwMDAwMFoXDTMxMTEwODIzNTk1OVowYTEL
+MAkGA1UEBhMCVVMxFTATBgNVBAoTDERpZ2lDZXJ0IEluYzEZMBcGA1UECxMQd3d3
+LmRpZ2ljZXJ0LmNvbTEgMB4GA1UEAxMXRGlnaUNlcnQgR2xvYmFsIFJvb3QgRzIw
+ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC7N8003HtrybJokK1Kdf9G
+uiEKCI31GVTJ+4jb867yOomRPHrmqwYaa8+sLeheCSREumKaftajqH7gVHUgBaxQ
+t5xjGmww3NofGbHXHt791+DLlIM3ruwfQ07deyzSvS6lL+SpuK061JmktiXpm2sA
+YJJg/08hSRj3Z5CrYQacj/K66bTpkjJrtfNX6F0bzYwdq5UElUnzNS2W40lt3Xfj
++0lLtKxVB6mPlbO0I7tMbUXw9qmylTC0/UxVjCdKVxR8gp3Nc5LTFkoGDIxQ0Y8e
+Cb4XoeYhyv2D5RC8g6UKxGco9nMUFD1GdsOHFIkhNE2vD0UMpkmhurucxbEzgymF
+AgMBAAGjggFCMIIBPjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBROIlQgGJXm
+427mD/r6uRLtBhePOTAfBgNVHSMEGDAWgBSxPsNpA/i/RwHUmCYaCALvY2QrwzAO
+BgNVHQ8BAf8EBAMCAYYwfQYIKwYBBQUHAQEEcTBvMCMGCCsGAQUFBzABhhdodHRw
+Oi8vb2NzcC5kaWdpY2VydC5jbjBIBggrBgEFBQcwAoY8aHR0cDovL2NhY2VydHMu
+ZGlnaWNlcnQuY24vRGlnaUNlcnRIaWdoQXNzdXJhbmNlRVZSb290Q0EuY3J0MEkG
+A1UdHwRCMEAwPqA8oDqGOGh0dHA6Ly9jcmwuZGlnaWNlcnQuY24vRGlnaUNlcnRI
+aWdoQXNzdXJhbmNlRVZSb290Q0EuY3JsMBEGA1UdIAQKMAgwBgYEVR0gADANBgkq
+hkiG9w0BAQsFAAOCAQEAPY0H38WKoRicq+imoXToXsYshnXsCeXfpTJs+HOdjVka
+pQQFxfzGUHnHByRpc834TNpZF6AOMxTtK/FI+8l8u33uBuKroJFDi34wFalO05f4
+C4ALEx7BCxlQxA1yupKS5dTTvnOzYDmn308qD4pzRz7txWurHXSGQDhADSr4NvyB
+hQCQ6J3cjxxNNPlrioJfDTIeIvweGUHLGxMmViOzR7lR90kmS15tt5VQQavVYGsM
+AXMDRQvvCRpypGwrfIipSOH/SJjFCpRFXgmtBGsbWcJUd/NrC8XCZph19Av3NfO2
+Tc4NmKnaPCzAk5WBqMnoh62c/B39FErQbp+/vZnwtQ==
+-----END CERTIFICATE-----
+------------------
+
+Received TLS Record
+Header:
+  Version = TLS 1.1 (0x302)
+  Content Type = Handshake (22)
+  Length = 145
+    ServerKeyExchange, Length=141
+      KeyExchangeAlgorithm=ECDHE
+        named_curve: secp256r1 (P-256) (23)
+        point (len=65): 046425E35422FB3F364D0D502269FD9A2551602AD5268C3849B1C26D67CEEBF1DF1C0EBC1D4990114895A22F8A30329828530159FF4D39765FD0B216A14634E8AA
+      Signature (len=70): 3044022078103E2FBCA6B3F7A41536295D3B2F65811F0E9BF94CFF0DEEAF48786F59819D022039CE7ED40A866E9562EB242D1FF00F9B64779E9ECB9E5D75CCE89AFEDCD1CA20
+
+Received TLS Record
+Header:
+  Version = TLS 1.1 (0x302)
+  Content Type = Handshake (22)
+  Length = 4
+    ServerHelloDone, Length=0
+
+Sent TLS Record
+Header:
+  Version = TLS 1.1 (0x302)
+  Content Type = Handshake (22)
+  Length = 70
+    ClientKeyExchange, Length=66
+      KeyExchangeAlgorithm=ECDHE
+        ecdh_Yc (len=65): 04DE510D3AF0AAC7DD4FAE19217CB5EF6A7BE49057BD6E2EB720B881FAB00E2A555A5AC27221676F7778B9625685D0CEA8C0C609859C38BE5E05A07D079D810EFC
+
+Sent TLS Record
+Header:
+  Version = TLS 1.1 (0x302)
+  Content Type = ChangeCipherSpec (20)
+  Length = 1
+    change_cipher_spec (1)
+
+Sent TLS Record
+Header:
+  Version = TLS 1.1 (0x302)
+  Content Type = Handshake (22)
+  Length = 68
+    Finished, Length=12
+      verify_data (len=12): 6414AD7CB7298A9C28E9A59D
+
+Received TLS Record
+Header:
+  Version = TLS 1.1 (0x302)
+  Content Type = ChangeCipherSpec (20)
+  Length = 1
+Received TLS Record
+Header:
+  Version = TLS 1.1 (0x302)
+  Content Type = Handshake (22)
+  Length = 68
+    Finished, Length=12
+      verify_data (len=12): 083029839A2806B258E2E89D
+
+---
+Certificate chain
+ 0 s:C=US, ST=California, L=Menlo Park, O=Meta Platforms, Inc., CN=*.instagram.com
+   i:C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+   a:PKEY: EC, (prime256v1); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Jul  4 00:00:00 2026 GMT; NotAfter: Oct  2 23:59:59 2026 GMT
+ 1 s:C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Global Root G2
+   a:PKEY: RSA, 2048 (bit); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Mar 30 00:00:00 2021 GMT; NotAfter: Mar 29 23:59:59 2031 GMT
+ 2 s:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Global Root G2
+   i:C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert High Assurance EV Root CA
+   a:PKEY: RSA, 2048 (bit); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Oct 29 00:00:00 2024 GMT; NotAfter: Nov  8 23:59:59 2031 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIGWzCCBUOgAwIBAgIQDka4BT+dtYKHlHYYtJ3WHjANBgkqhkiG9w0BAQsFADBZ
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTMwMQYDVQQDEypE
+aWdpQ2VydCBHbG9iYWwgRzIgVExTIFJTQSBTSEEyNTYgMjAyMCBDQTEwHhcNMjYw
+NzA0MDAwMDAwWhcNMjYxMDAyMjM1OTU5WjBwMQswCQYDVQQGEwJVUzETMBEGA1UE
+CBMKQ2FsaWZvcm5pYTETMBEGA1UEBxMKTWVubG8gUGFyazEdMBsGA1UEChMUTWV0
+YSBQbGF0Zm9ybXMsIEluYy4xGDAWBgNVBAMMDyouaW5zdGFncmFtLmNvbTBZMBMG
+ByqGSM49AgEGCCqGSM49AwEHA0IABJNzfdUFIfOS+x7s1poSDHtaBQ8WCkmSP2bn
+GS8+L7WL4ZRwfQbRUxBwEyO0zAILC5xNz5t5lBwyzgRFiKtN5AqjggPRMIIDzTAf
+BgNVHSMEGDAWgBR0hYDAZsffN97PvSk3qgMdvu3NFzAdBgNVHQ4EFgQUEkKw++w/
+8L7hmVptSKb+sGuLzBkwawYDVR0RBGQwYoIPKi5pbnN0YWdyYW0uY29tghIqLmNk
+bmluc3RhZ3JhbS5jb22CDSouaWdzb25hci5jb22CEGNkbmluc3RhZ3JhbS5jb22C
+C2lnc29uYXIuY29tgg1pbnN0YWdyYW0uY29tMD4GA1UdIAQ3MDUwMwYGZ4EMAQIC
+MCkwJwYIKwYBBQUHAgEWG2h0dHA6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzAOBgNV
+HQ8BAf8EBAMCA4gwEwYDVR0lBAwwCgYIKwYBBQUHAwEwgZ8GA1UdHwSBlzCBlDBI
+oEagRIZCaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0R2xvYmFsRzJU
+TFNSU0FTSEEyNTYyMDIwQ0ExLTEuY3JsMEigRqBEhkJodHRwOi8vY3JsNC5kaWdp
+Y2VydC5jb20vRGlnaUNlcnRHbG9iYWxHMlRMU1JTQVNIQTI1NjIwMjBDQTEtMS5j
+cmwwgYcGCCsGAQUFBwEBBHsweTAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuZGln
+aWNlcnQuY29tMFEGCCsGAQUFBzAChkVodHRwOi8vY2FjZXJ0cy5kaWdpY2VydC5j
+b20vRGlnaUNlcnRHbG9iYWxHMlRMU1JTQVNIQTI1NjIwMjBDQTEtMS5jcnQwDAYD
+VR0TAQH/BAIwADCCAX0GCisGAQQB1nkCBAIEggFtBIIBaQFnAHYAwjF+V0UZo0Xu
+fzjespBB68fCIVoiv3/Vta12mtkOUs0AAAGfKnvY7AAABAMARzBFAiEA0S+oFJ5d
+MfHQmwnXMH+y9QYVUJTXxi4paAuKUBwhWbECIACWzGcOQ49NaVFnAxsA55DVrOvy
+1SIATvqwK51N9iJrAHYA1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXcA
+AAGfKnvZAQAABAMARzBFAiBxhQDggPPvStm/ymtBGtNdCJDZvWn9CeJb+juzgwgH
+swIhAIJgAaBoR9uNEqwsbsq1p+p99QdvSd7JRbAjAMX2JVGsAHUAlE5Dh/rswe+B
+8xkkJqgYZQHH0184AgE/cmd9VTcuGdgAAAGfKnvY/wAABAMARjBEAiBfv6dO65Ay
+JU5gvVnDI9WGlREa0qaLZy7Q+ZsbbHESdAIgZvpLSw09w4mkiPZPHSCYKCEV3rUr
+6L9JP+LajDVHlUAwDQYJKoZIhvcNAQELBQADggEBAGoRydNMvnDB8wvac95UYdYz
+7nvSOjp8l47hdrAce/jykWSI26PNTinq+Ze617U3EJn2UEQS8ZrCLcB1rXAc8bW2
+Wqz46CrPOlxBK1k/gBHaucXL63i0U2Usm8N1jZy8JWTT/vvnZEl5vvtCC6QTnVAN
+HfPux1T40lSQPtztmAWj/BPwWYKL8VmQHVJ24buf67ph1PN/SqDQe1omuvWrq2vO
+5Azt75ACjZXmbN1VjQVwupTVxdoU8ZkR3XmJei3w8nEmSOpwcbyhg18gox1JpJpH
+iZvwqoMcWlTNFDh+h3bTWCBLw+GR7/nI0ZaAc243Ft1q3kqCNS1kPhlokAH9CC4=
+-----END CERTIFICATE-----
+subject=C=US, ST=California, L=Menlo Park, O=Meta Platforms, Inc., CN=*.instagram.com
+issuer=C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+---
+No client certificate CA names sent
+Peer signing digest: SHA1
+Peer signature type: ecdsa_sha1
+Peer Temp Key: ECDH, prime256v1, 256 bits
+---
+SSL handshake has read 4403 bytes and written 283 bytes
+Verification: OK
+---
+New, TLSv1.0, Cipher is ECDHE-ECDSA-AES128-SHA
+Protocol: TLSv1.1
+Server public key is 256 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.1
+    Cipher    : ECDHE-ECDSA-AES128-SHA
+    Session-ID: 9D99E9E083F772920481EDB13B588AADA101EE74ED6FCBD464106C95494E6054
+    Session-ID-ctx: 
+    Master-Key: 5BA9F27BB2CF72A019F1E908F60A90CE28A4B9F38B0648BA736FDB2A2FA3A95FA16DF55B507325576A8115A552F67D9E
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1790272363
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: yes
+---
+Sent TLS Record
+Header:
+  Version = TLS 1.1 (0x302)
+  Content Type = Alert (21)
+  Length = 52
+    Level=warning(1), description=close notify(0)
+

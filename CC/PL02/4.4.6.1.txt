@@ -1,0 +1,88 @@
+Instagram TLSv1.3
+Collecting connection statistics for 30 seconds
+******************************************************************************************************
+
+102 connections in 0.28s; 364.29 connections/user sec, bytes read 0
+102 connections in 31 real seconds, 0 bytes read per connection
+
+Now timing with session id reuse.
+starting
+**********************************************************************************************************
+
+106 connections in 0.29s; 365.52 connections/user sec, bytes read 0
+106 connections in 31 real seconds, 0 bytes read per connection
+
+
+Collecting connection statistics for 30 seconds
+********************************************************************************************
+
+92 connections in 0.24s; 383.33 connections/user sec, bytes read 0
+92 connections in 31 real seconds, 0 bytes read per connection
+
+
+Now timing with session id reuse.
+starting
+**********************************************************************************************
+
+94 connections in 0.26s; 361.54 connections/user sec, bytes read 0
+94 connections in 31 real seconds, 0 bytes read per connection
+
+Instagram TLSv1.2
+Collecting connection statistics for 30 seconds
+****************************************************************************************************************************************************************************************************************************************************
+
+244 connections in 0.71s; 343.66 connections/user sec, bytes read 0
+244 connections in 31 real seconds, 0 bytes read per connection
+
+
+Now timing with session id reuse.
+starting
+rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr**rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr**rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr**rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+
+329 connections in 0.24s; 1370.83 connections/user sec, bytes read 0
+329 connections in 31 real seconds, 0 bytes read per connection
+
+Collecting connection statistics for 30 seconds
+***********************************************************************************************************************************************************************************************************************************************
+
+239 connections in 0.59s; 405.08 connections/user sec, bytes read 0
+239 connections in 31 real seconds, 0 bytes read per connection
+
+
+Now timing with session id reuse.
+starting
+rrrrrrrrrrr**rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr**rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr**rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+
+332 connections in 0.24s; 1383.33 connections/user sec, bytes read 0
+332 connections in 31 real seconds, 0 bytes read per connection
+
+DEI TLSv1.2
+Collecting connection statistics for 30 seconds
+**
+
+2 connections in 0.01s; 200.00 connections/user sec, bytes read 0
+2 connections in 36 real seconds, 0 bytes read per connection
+
+
+Now timing with session id reuse.
+starting
+rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+
+288 connections in 0.13s; 2215.38 connections/user sec, bytes read 0
+288 connections in 32 real seconds, 0 bytes read per connection
+
+
+Collecting connection statistics for 30 seconds
+**************************************************************************************************************************************************************************************
+
+182 connections in 0.46s; 395.65 connections/user sec, bytes read 0
+182 connections in 31 real seconds, 0 bytes read per connection
+
+
+Now timing with session id reuse.
+starting
+rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+
+297 connections in 0.19s; 1563.16 connections/user sec, bytes read 0
+297 connections in 31 real seconds, 0 bytes read per connection
+
