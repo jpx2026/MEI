@@ -76,6 +76,7 @@ try:
             break
         else:
             client.publish(f"{PREFIX}/chat/{room}", f"[{NAME}] {text}")
+            
 except (KeyboardInterrupt, EOFError):
     pass
 finally:
